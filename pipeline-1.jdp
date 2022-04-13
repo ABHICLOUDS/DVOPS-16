@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Pull'){
             steps {
-                sh 'sudo yum install git -y'
+                
                 git 'https://github.com/ABHICLOUDS/cbz-mf.git'
             }
         }
