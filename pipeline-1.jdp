@@ -4,7 +4,8 @@ pipeline {
         stage('Pull'){
             steps {
                 
-                git 'https://github.com/ABHICLOUDS/cbz-mf.git'
+                git credentialsId: 'git-id', url: 'https://github.com/ABHICLOUDS/cbz-mf.git'
+                sh 'ls'
             }
         }
         stage('Build'){
